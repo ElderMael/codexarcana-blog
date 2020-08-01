@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Codex Arcana`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Miguel Enriquez`,
+      summary: `Code Necromancer, Hardware Trickster, Angry Dev. Software Engineer @ThoughtWorks Opinions are my own. Host of @PirateDevRadio`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Miguel Enriquez Blog`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `eldermael`,
     },
   },
   plugins: [
