@@ -21,7 +21,7 @@ Now, many things change between Linux and macOS but I still had a lot of things 
 
 By recommendation I started downloading [iTerm2](https://iterm2.com/). The installation is very straightforward: click in the download button to get the zip file, then double click it in your Finder to extract the content, a single .app file (that is a “Package bundle”) and execute it.
 
-![](content/a-working-ceylon-+-spring-boot-environment-in-macos/asset-1.png)
+![](./asset-1.png)
 
 One good thing that I found from iTerm2 is the so called “Unyxness” i.e. it has a lot of shortcuts to avoid using my mouse while in the console. I also enjoyed the [Material Design](https://material.google.com/) theme that matches my other application themes (I will talk about those later).
 
@@ -42,7 +42,8 @@ Now, Homebrew has a plethora of software that you can install but first you shou
 ```
 $ brew update
 $ brew doctor
-```![](./asset-2.png)
+```
+![](./asset-2.png)
 
 Once you see if everything is working fine, you can continue with installing Java.
 
@@ -69,7 +70,8 @@ The setup is pretty straightforward, just type this in your terminal and follow 
 
 ```
 $ curl -s "https://get.sdkman.io" | bash
-```![](./asset-3.png)
+```
+![](./asset-3.png)
 
 You will have to close the current terminal session and then you will have SDKMAN! working properly.
 
@@ -77,7 +79,8 @@ To know that you have it working correctly, check the list of candidates that yo
 
 ```
 $ sdk list
-```![](./asset-4.png)
+```
+![](./asset-4.png)
 
 As you can see in the image, you have a list of candidates that you can install and SDKMAN! will show you the way to install those and the latest version. In this case, to install Ceylon, you have to type the following command:
 
@@ -137,7 +140,8 @@ To create a Ceylon project you can use the command line to create the files for 
 
 ```
 $ ceylon new simple
-```![](./asset-6.png)
+```
+![](./asset-6.png)
 
 And this is where Gradle comes into play. First you will need to create a file named `build.gradle` and provide the contents needed to work with your module so the Ceylon plugin can create the overrides.xml file.
 
