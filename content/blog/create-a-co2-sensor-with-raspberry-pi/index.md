@@ -37,6 +37,12 @@ the GPIO with the sensor.
 
 ## Wiring It All Together
 
+Now, it was a while (since my college days) that I had work on a solderless board but
+fortunately there is a diagram to connect the sensor to an arduino board thus you
+can deduce how to wire it to the equivalent pins on a Raspberry Pi.
+
+![](./sensor-connection.png)
+
 
 [1]: (https://en.wikipedia.org/wiki/General-purpose_input/output
 [2]: https://www.keyestudio.com/keyestudio-ccs811-carbon-dioxide-temperature-air-quality-sensor-for-arduino-p0581.html
