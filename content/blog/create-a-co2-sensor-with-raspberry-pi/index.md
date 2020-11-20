@@ -43,8 +43,41 @@ can deduce how to wire it to the equivalent pins on a Raspberry Pi.
 
 ![](./sensor-connection.png)
 
+With this diagram, and the official Raspberry Pi documentation, I was able to find the
+correct pins without much issue. For reference, here is the Raspberry Pi GPIO pin
+diagram (this is for Raspberry Pi 4 Model B).
+
+![](./gpio-pins.png)
+
+Finally, with the help of the T-type breakout, and the solderless board, here is a picture
+of the connections. Note that the breakout already labels the pins so is not hard
+to match them.
+
+![](./solderless-board-connections.jpeg)
+
+## Validate Connections Through Raspberry Pi and i2cdetect
+
+Now, with everything wired, the fastest way to detect if the sensor is properly interfacing
+to the I²C bus is to run a utility which can be installed on the Raspberry Pi Os named
+[`i2cdetect`][5]. Here is the command:
+
+```shell script
+
+pi@elderserver:~ $ i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- 5a -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+
+```
 
 [1]: (https://en.wikipedia.org/wiki/General-purpose_input/output
 [2]: https://www.keyestudio.com/keyestudio-ccs811-carbon-dioxide-temperature-air-quality-sensor-for-arduino-p0581.html
 [3]: https://en.wikipedia.org/wiki/I%C2%B2C
 [4]: https://www.amazon.com/gp/product/B07DL25MVQ/ref=ppx_yo_dt_b_asin_title_o05_s02?ie=UTF8&psc=1
+[5]: https://linux.die.net/man/8/i2cdetect
