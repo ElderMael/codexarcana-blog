@@ -87,6 +87,16 @@ The way to interpret the output of the command and the parameters is the followi
    can be found. In this case, the only address responding is `5a`, which matches the
    vendor specified address for the CO2 sensor. You can find more details in the
    datasheet of the [CCS811 sensor][6].
+   
+> All I²C transactions must use the (7 bits) slave address 0x5A or 0x5B depending on 
+> status of ADDR pin when writing to and reading from the CCS811.
+
+## Read The Sensor Data
+
+![](./state-machine.png)
+
+## Programming The Web Service
+
 
 
 
