@@ -84,8 +84,8 @@ The way to interpret the output of the command and the parameters is the followi
     mode.
 
 *  The output of command represents the bus addresses in which the detected components
-   can be found. In this case, the only address responding is `5a`, which is the
-   address in which the CO2 sensor will respond. You can find more details in the
+   can be found. In this case, the only address responding is `5a`, which matches the
+   vendor specified address for the CO2 sensor. You can find more details in the
    datasheet of the [CCS811 sensor][6].
 
 
