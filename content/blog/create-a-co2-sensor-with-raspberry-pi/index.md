@@ -91,13 +91,29 @@ The way to interpret the output of the command and the parameters is the followi
 > All I²C transactions must use the (7 bits) slave address 0x5A or 0x5B depending on 
 > status of ADDR pin when writing to and reading from the CCS811.
 
-## Read The Sensor Data
+## Read Data From The Sensor
 
 ![](./state-machine.png)
 
+This was the tricky part of the project as the documentation in the [wiki of the seller][7]
+had mostly C code which somehow was factually incorrect once I compared it to the
+[official programming and interface guide][8]. I struggled about a day using the wiki, so
+I finally started to search for the sensor documentation instead of Arduino IDE examples.
+
+### TypeScript, I²C And Prometheus
+
+> The full source code can be found in this [Github repository.][9]
+
+In order to work with I²C sensor I decided to use the help of the Node ecosystem using a
+small library called [`raspi-i2c`][10] which allows sending and reading from devices
+attached to the bus in a very procedural way, with sync and async functions.
+
+To build the web service itself I used Express to handle the HTTP requests coming from
+Prometheus and a small library called [`node-exporter-prometheus`][11] to generate the Gauge
+metric type to expose the sensor data.
+
+
 ## Programming The Web Service
-
-
 
 
 [1]: (https://en.wikipedia.org/wiki/General-purpose_input/output
@@ -106,3 +122,8 @@ The way to interpret the output of the command and the parameters is the followi
 [4]: https://www.amazon.com/gp/product/B07DL25MVQ/ref=ppx_yo_dt_b_asin_title_o05_s02?ie=UTF8&psc=1
 [5]: https://linux.die.net/man/8/i2cdetect
 [6]: https://cdn.sparkfun.com/assets/learn_tutorials/1/4/3/CCS811_Datasheet-DS000459.pdf
+[7]: https://wiki.keyestudio.com/KS0457_keyestudio_CCS811_Carbon_Dioxide_Air_Quality_Sensor
+[8]: https://www.sciosense.com/wp-content/uploads/2020/01/CCS811-Application-Note-Programming-and-interfacing-guide.pdf
+[9]: https://github.com/ElderMael/co2-sensor-pi
+[10]: https://www.npmjs.com/package/raspi-i2c
+[11]: https://www.npmjs.com/package/@tailorbrands/node-exporter-prometheus
