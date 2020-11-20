@@ -55,7 +55,7 @@ to match them.
 
 ![](./solderless-board-connections.jpeg)
 
-## Validate Connections Through Raspberry Pi and i2cdetect
+## Validate Connections To Raspberry Pi with i2cdetect
 
 Now, with everything wired, the fastest way to detect if the sensor is properly interfacing
 to the I²C bus is to run a utility which can be installed on the Raspberry Pi Os named
@@ -76,8 +76,23 @@ pi@elderserver:~ $ i2cdetect -y 1
 
 ```
 
+The way to interpret the output of the command and the parameters is the following:
+
+*  `i2cdetect` takes a positional argument named I²C bus, in this case it maps to a
+    linux device by number depending on your board. On the Raspberry Pi 4, it is the
+    device number 1 located at `/dev/i2c-1`. The `-y` option is to disable the interactive
+    mode.
+
+*  The output of command represents the bus addresses in which the detected components
+   can be found. In this case, the only address responding is `5a`, which is the
+   address in which the CO2 sensor will respond. You can find more details in the
+   datasheet of the [CCS811 sensor][6].
+
+
+
 [1]: (https://en.wikipedia.org/wiki/General-purpose_input/output
 [2]: https://www.keyestudio.com/keyestudio-ccs811-carbon-dioxide-temperature-air-quality-sensor-for-arduino-p0581.html
 [3]: https://en.wikipedia.org/wiki/I%C2%B2C
 [4]: https://www.amazon.com/gp/product/B07DL25MVQ/ref=ppx_yo_dt_b_asin_title_o05_s02?ie=UTF8&psc=1
 [5]: https://linux.die.net/man/8/i2cdetect
+[6]: https://cdn.sparkfun.com/assets/learn_tutorials/1/4/3/CCS811_Datasheet-DS000459.pdf
