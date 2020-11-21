@@ -14,7 +14,7 @@ redirect_from:
   - /co2-sensor-raspberry-pi
 ---
 
-I recently wanted to introduce my daughters to the programming, so I decided
+I recently wanted to introduce my daughters to programming, so I decided
 to use some kind of sensor to prototype a small application and teach them
 how to make hardware and software work in tandem as I believe having something
 physical would be more interesting than me typing on a REPL.
@@ -76,7 +76,7 @@ pi@elderserver:~ $ i2cdetect -y 1
 
 ```
 
-The way to interpret the output of the command and the parameters is the following:
+The way to interpret the output of the command, and the parameters is the following:
 
 *  `i2cdetect` takes a positional argument named I²C bus, in this case it maps to a
     linux device by number depending on your board. On the Raspberry Pi 4, it is the
@@ -92,8 +92,6 @@ The way to interpret the output of the command and the parameters is the followi
 > status of ADDR pin when writing to and reading from the CCS811.
 
 ## Read Data From The Sensor
-
-![](./state-machine.png)
 
 This was the tricky part of the project as the documentation in the [wiki of the seller][7]
 had mostly C code which somehow was factually incorrect once I compared it to the
@@ -112,8 +110,34 @@ To build the web service itself I used Express to handle the HTTP requests comin
 Prometheus and a small library called [`node-exporter-prometheus`][11] to generate the Gauge
 metric type to expose the sensor data.
 
-
 ## Programming The Web Service
+
+An Express web service is not really that difficult, the relevant part is here:
+
+```javascript
+const app = express();
+
+app.use(promExporter.middleware);
+app.use(readSensorMiddleware(i2c));
+app.get('/metrics', promExporter.metrics);
+
+app.listen(serverPort, () => {
+    initSensor(i2c);
+    console.log(`server started at http://localhost:${serverPort}`);
+});
+```
+
+We basically create an Express application, then register a middleware to gather the
+common metrics using `node-exporter-prometheus` and register our own middleware to read
+the sensor before finally exposing an endpoint under `/metrics`.
+
+The `initSensor` function will apply the initialization logic required for the
+sensor to start reading the environmental data. It follows the following diagram:
+
+![](./state-machine.png)
+
+Finally, the `readSensorMiddleware` will read both the CO2 and TVOC readings from the
+sensor data address and set the Prometheus Gauges along any errors found.
 
 
 [1]: (https://en.wikipedia.org/wiki/General-purpose_input/output
