@@ -3,10 +3,13 @@ module.exports = {
     title: `Codex Arcana`,
     author: {
       name: `Miguel Enriquez`,
-      summary: `Code Necromancer, Hardware Trickster, Angry Dev. Software Engineer @ThoughtWorks Opinions are my own. Host of @PirateDevRadio`,
+      email: `sftwr.mael@gmail.com`,
+      twitter: `eldermael`,
+      summary: `Code Necromancer, Hardware Trickster, Angry Dev. 
+      Software Engineer @ThoughtWorks Opinions are my own. Host of @PirateDevRadio`,
     },
     description: `Miguel Enriquez Blog`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://blog.eldermael.io/`,
     social: {
       twitter: `eldermael`,
     },
