@@ -112,6 +112,8 @@ metric type to expose the sensor data.
 
 ## Programming The Web Service
 
+### The Express Server
+
 An Express web service is not really that difficult, the relevant part is here:
 
 ```javascript
@@ -131,10 +133,47 @@ We basically create an Express application, then register a middleware to gather
 common metrics using `node-exporter-prometheus` and register our own middleware to read
 the sensor before finally exposing an endpoint under `/metrics`.
 
+### Initializing The Sensor, A Quick Premier Of I²C
+
 The `initSensor` function will apply the initialization logic required for the
 sensor to start reading the environmental data. It follows the following diagram:
 
 ![](./state-machine.png)
+
+For this, the `raspi-i2c` library provides two basic methods to interact with the
+I²C sensor:
+
+1. `writeSync(address: int, register: int, buffer: Buffer): void` this method allows
+    writing to I²C devices by their addressed, to a specific register.
+
+1. `readSync(address: int, register: int, length: int): Buffer` this method allows
+    reading a specific register of an I²C devices by their address.
+    
+These are the two methods required to initialize the sensor. As it can be inferred,
+the I²C sensor is very simple to interact with. As long as you have the sensor
+address (in our case `5a`), and a register to read/write from, you will be able to
+initialize and read the required data.
+
+ This small snippet allows to read the hardware id from the sensor and check is the
+ correct one:
+ 
+ ```javascript
+// SENSOR_ADDRESS is 0x5a, HARDWARE_ID_REGISTER is 0x20
+const hardwareIdBuffer = i2c.readSync(SENSOR_ADDRESS, HARDWARE_ID_REGISTER, 1);
+const hardwareId = hardwareIdBuffer[0];
+
+if (hardwareId !== SENSOR_HARDWARE_ID_MAGIC_NUMBER) { // This is 0x81
+    console.log("Hardware ID did not match: ", hardwareId);
+    // ... call error handler
+}
+```
+
+As you can see, this is very straightforward. You choose either if you want to read
+or write from a sensor and how many bytes. You pass a [`Buffer`][12] or get one
+depending on the operation. After that is just a matter of inspecting the bytes
+returned according to the [datasheet.][6].
+
+### Read Data From The Sensor
 
 Finally, the `readSensorMiddleware` will read both the CO2 and TVOC readings from the
 sensor data address and set the Prometheus Gauges along any errors found.
@@ -151,3 +190,4 @@ sensor data address and set the Prometheus Gauges along any errors found.
 [9]: https://github.com/ElderMael/co2-sensor-pi
 [10]: https://www.npmjs.com/package/raspi-i2c
 [11]: https://www.npmjs.com/package/@tailorbrands/node-exporter-prometheus
+[12]: https://nodejs.org/api/buffer.html
