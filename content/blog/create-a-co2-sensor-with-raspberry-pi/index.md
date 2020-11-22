@@ -147,7 +147,7 @@ I²C sensor:
     writing to I²C devices by their addressed, to a specific register.
 
 1. `readSync(address: int, register: int, length: int): Buffer` this method allows
-    reading a specific register of an I²C devices by their address.
+    reading a specific register of I²C devices by their address.
     
 These are the two methods required to initialize the sensor. As it can be inferred,
 the I²C sensor is very simple to interact with. As long as you have the sensor
