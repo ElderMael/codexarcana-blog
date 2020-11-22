@@ -6,7 +6,8 @@ module.exports = {
       email: `sftwr.mael@gmail.com`,
       twitter: `eldermael`,
       summary: `Code Necromancer, Hardware Trickster, Angry Dev. 
-      Software Engineer @ThoughtWorks Opinions are my own. Host of @PirateDevRadio`,
+      Software Engineer @ThoughtWorks Opinions are my own. 
+      Host of @PirateDevRadio`,
     },
     description: `Miguel Enriquez Blog`,
     siteUrl: `https://blog.eldermael.io/`,
