@@ -201,6 +201,29 @@ const co2Reading = buffer.readUInt16BE();
 co2Gauge.set(co2Reading);
 ```
 
+## Endpoint Result And Grafana
+
+Now, with everything wired together, here is the resulting payload
+when sending an HTTP request (omitting comments and other metrics).
+
+```shell script
+$ http --body GET http://192.168.1.20:8080/metrics
+co2_ppm{appName="co2-sensor-pi"} 405
+tvoc_ppb{appName="co2-sensor-pi"} 0
+message_invalid_errors{appName="co2-sensor-pi"} 6
+read_reg_invalid_errors{appName="co2-sensor-pi"} 0
+meas_mode_invalid_errors{appName="co2-sensor-pi"} 0
+max_resistance_errors{appName="co2-sensor-pi"} 1
+heater_fault_errors{appName="co2-sensor-pi"} 1
+heater_supply_errors{appName="co2-sensor-pi"} 2
+unknown_errors{appName="co2-sensor-pi"} 2
+```
+
+Once we have Prometheus scrapping the metrics, here is the resulting
+Grafana dashboard:
+
+![](./dashboard.png)
+
 
 [1]: (https://en.wikipedia.org/wiki/General-purpose_input/output
 [2]: https://www.keyestudio.com/keyestudio-ccs811-carbon-dioxide-temperature-air-quality-sensor-for-arduino-p0581.html
