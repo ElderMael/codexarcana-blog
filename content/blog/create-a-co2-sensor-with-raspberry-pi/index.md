@@ -169,9 +169,9 @@ if (hardwareId !== SENSOR_HARDWARE_ID_MAGIC_NUMBER) { // This is 0x81
 ```
 
 As you can see, this is very straightforward. You choose either if you want to read
-or write from a sensor and how many bytes. You pass a [`Buffer`][12] or get one
+or write from a sensor and how many bytes. You pass a [Buffer][12] or get one
 depending on the operation. After that is just a matter of inspecting the bytes
-returned according to the [datasheet.][6].
+returned according to the [datasheet][6].
 
 ### Read Data From The Sensor
 
