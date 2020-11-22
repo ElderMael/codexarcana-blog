@@ -176,7 +176,30 @@ returned according to the [datasheet][6].
 ### Read Data From The Sensor
 
 Finally, the `readSensorMiddleware` will read both the CO2 and TVOC readings from the
-sensor data address and set the Prometheus Gauges along any errors found.
+sensor data address and set the Prometheus Gauges along any errors found. Here is
+the relevant snippet of code:
+
+```javascript
+// SENSOR_ADDRESS is 0x5a, STATUS_REGISTER is 0x00
+const statusRegisterReading = i2c.readSync(SENSOR_ADDRESS, STATUS_REGISTER, 1);
+// bit at position 4 signals new data is ready
+const isDataReady = bitwise.integer.getBit(statusRegisterReading[0], 4);
+
+// If data is not ready check errors
+if (isDataReady === 0) {
+    checkErrorRegister(i2c);
+    return;
+}
+
+// Read Data, 8 bytes, the first two bytes have the co2 reading
+const buffer = i2c.readSync(SENSOR_ADDRESS, RESULT_DATA_REGISTER, 8);
+
+// Convert the first two bytes to a 16 bit integer with big endianess
+const co2Reading = buffer.readUInt16BE();
+
+// Set the Prometheus Gauge to the result
+co2Gauge.set(co2Reading);
+```
 
 
 [1]: (https://en.wikipedia.org/wiki/General-purpose_input/output
