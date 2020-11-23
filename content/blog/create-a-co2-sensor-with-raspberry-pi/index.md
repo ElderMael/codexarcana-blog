@@ -175,7 +175,7 @@ returned according to the [datasheet][6].
 
 ### Read Data From The Sensor
 
-Finally, the `readSensorMiddleware` will read both the CO2 and TVOC readings from the
+Finally, the `readSensorMiddleware` will read both the CO2 and TVOC output from the
 sensor data address and set the Prometheus Gauges along any errors found. Here is
 the relevant snippet of code:
 
