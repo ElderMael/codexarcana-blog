@@ -34,6 +34,9 @@ the other skills required. Here is an ideal example:
 - 30% could be spent on coding,
 - 10% can be spent on growing your own skills.
 
+A good reference for this kind of transition for me has been the work of [Patrick Kua][1]
+on the topic. [Here][6] is the most influential talk I could find for this.
+
 ### What Skills Do I Need to Be A Tech Lead?
 
 I think there are fundamentally 3 skills that you need to develop:
@@ -109,8 +112,8 @@ After quite a bit of interviews I have seen common questions and follow-ups:
 1. What is DevOps? The interviewer wants to know if you "get DevOps". Focus
    on why DevOps is more of a practice and cultural mindset instead of titles. 
    
-1. What is SRE? Software Reliability Engineering can be seen, [per Google's words][5],
-   
+1. What is SRE? Software Reliability Engineering can be seen, [per Google's words][5]:
+
    > One could view DevOps as a generalization of several core SRE principles to 
    > a wider range of organizations, management structures, and personnel. One 
    > could equivalently view SRE as a specific implementation of DevOps with some 
@@ -120,6 +123,10 @@ After quite a bit of interviews I have seen common questions and follow-ups:
 but paraphrasing here, I think of SRE as an implementation of DevOps practices done 
 by Google.
 
+1. Can you describe/document a pipeline to deliver code from scratch? 
+
+[1]: https://twitter.com/patkua
 [2]: https://www.youtube.com/watch?v=v_nhv6aY1Kg
 [3]: https://evolutionaryarchitecture.com/
 [4]: https://en.wikipedia.org/wiki/Conway%27s_law
+[6]: https://www.youtube.com/watch?v=iLS6NXMXtLI&t=1153s
