@@ -72,7 +72,30 @@ work well with the _evolution analogy_:
    on different parts of your system quickly. Some services will be
    very stable once they reach a certain point but others need to 
    often change to accommodate business needs. Again, some parts of the
-   organism evolve while others remain stable.  
+   organism evolve while others remain stable.
+   
+1. Faster time to market. Following from the previous point, once you
+   know that the microservice architecture style allows for faster change
+   and independence you are able to quickly prototype new ideas because
+   you can start new business lines from scratch quickly with the right
+   tools.
+
+1. Innovation becomes cheap. As a side effect of the previous point,
+   microservices enable to quickly prototype new ideas because you can 
+   start new business lines from scratch quickly with the right tools.
+
+### Do You Think We Are Ready To Adopt Microservices?
+
+Microservices are not a free meal. [Conway's law][4] is an important
+concern if you plan to adopt this architecture style. This is because
+there is a social/organizational component to every software architecture
+style and having organizations simply jump into microservices without
+the proper mindset can be problematic.
+
+If you use Conway's law to your favor, service-based architectures can
+help move faster, but without organizational perspective it usually works
+against the adoption.
 
 [2]: https://www.youtube.com/watch?v=v_nhv6aY1Kg
 [3]: https://evolutionaryarchitecture.com/
+[4]: https://en.wikipedia.org/wiki/Conway%27s_law
