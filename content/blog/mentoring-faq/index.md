@@ -41,8 +41,8 @@ on the topic. [Here][6] is the most influential talk I could find for this.
 
 I think there are fundamentally 3 skills that you need to develop:
 
-1. Leadership skills, being technical or not technical
-1. System Design and Architecture skills, 
+1. Leadership skills, being technical or non-technical,
+1. System Design and Architecture skills and,
 1. Developer skills, which you may already have.
 
 ## Architecture
@@ -84,8 +84,8 @@ work well with the _evolution analogy_:
 1. Faster time to market. Following from the previous point, once you
    know that the microservice architecture style allows for faster change
    and independence you are able to quickly prototype new ideas because
-   you can start new business lines from scratch quickly with the right
-   tools.
+   you can start new business lines from scratch quickly, [with the right
+   tools (spanish)][7].
 
 1. Making innovation cheaper. As a side effect of the previous point,
    microservices enable to quickly prototype new ideas because you can 
@@ -134,3 +134,4 @@ by Google.
 [4]: https://en.wikipedia.org/wiki/Conway%27s_law
 [5]: https://sre.google/sre-book/introduction/
 [6]: https://www.youtube.com/watch?v=iLS6NXMXtLI&t=1153s
+[7]: https://www.youtube.com/watch?v=YLq3x-WtaRc&t=26s
