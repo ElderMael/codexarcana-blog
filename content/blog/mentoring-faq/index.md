@@ -133,5 +133,5 @@ by Google.
 [3]: https://evolutionaryarchitecture.com/
 [4]: https://en.wikipedia.org/wiki/Conway%27s_law
 [5]: https://sre.google/sre-book/introduction/
-[6]: https://www.youtube.com/watch?v=iLS6NXMXtLI&t=1153s
-[7]: https://www.youtube.com/watch?v=YLq3x-WtaRc&t=26s
+[6]: https://www.youtube.com/watch?v=iLS6NXMXtLI
+[7]: https://www.youtube.com/watch?v=YLq3x-WtaRc
