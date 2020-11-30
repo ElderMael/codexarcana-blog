@@ -76,7 +76,7 @@ overall system once you know what to aim to.
 An example of this is a fitness function that returns either the
 time, or the number of commits between your production code and the
 latest commit in your development environments. This function will
-let you know if you are properly applying Continuous Integration.
+let you know if you are properly applying Continuous Delivery.
 
 Another example is [Dependency drift fitness function][9]. It allows
 you to understand the Drift between microservices regarding libraries
