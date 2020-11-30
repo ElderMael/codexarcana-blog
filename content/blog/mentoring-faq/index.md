@@ -17,6 +17,15 @@ redirect_from:
   - /mentoring-faq
 ---
 
+During the past weeks I have spent about 2 hours per week on mentorship
+sessions with various developers from the [Devz Community][15]. I am really
+thankful for everyone that chose me among all the mentors and I took notes
+on most of the questions.
+
+I immediately found frequently asked questions for all the topics that I listed,
+so I decided to write a blog with them. In the future I plan to update this
+post with more questions as they come.
+
 ## Technical Leadership
 
 ### I Feel I Am Programming Less And Less \[As A Tech Lead], Is This Normal?
@@ -206,3 +215,4 @@ points but also require the following:
 [12]: https://www.youtube.com/watch?v=po712VIZZ7M
 [13]: https://landscape.cncf.io/
 [14]: https://infrastructure-as-code.com/book/
+[15]: https://github.com/devzcommunity/community
