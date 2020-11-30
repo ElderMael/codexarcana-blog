@@ -159,6 +159,30 @@ by Google.
 
 1. Can you describe/document a pipeline to deliver code from scratch? This is a
    lengthy question that may deserve its own post! it gets asked often.
+   
+1. What are SLAs and SLOs?
+   
+### I Want To Transition To A "DevOps"/SRE Position. What Should I Study?
+
+Most "DevOps" positions are really infrastructure positions. Most SRE positions
+are SysAdmin positions. Having said this, if you target infrastructure positions
+you should focus on:
+
+- Learn how to work with a specific Cloud Provider. This implies learning
+  how to manage and architect infrastructure on a specific provider. AWS has
+  around [30% of the market share][11] as of the time of this post, so it maximizes
+  your opportunity to land a job.
+
+- Learn tools and practices regarding Continuous Integration and Continuous Delivery.
+  Most interviews in the infrastructure space ask you to design a pipeline to
+  deliver services. The goal would be to be able to design pipelines using Jenkins
+  pipelines, Github actions, Gitlab pipelines. I recommend watching [Ken Mugrage][12]
+  talk about modern CI/CD practices, then learn a specific tool.
+
+- Learn about Observability tools and practices. A good rule of thumb is to use tools
+  from the [Cloud Native Computing Foundation Observability And Analysis landscape.][13]
+  Most interviews ask you to configure not only instrumentation but also alerts and
+  dashboards for services and infrastructure. 
 
 [1]: https://twitter.com/patkua
 [2]: https://www.youtube.com/watch?v=v_nhv6aY1Kg
@@ -170,3 +194,6 @@ by Google.
 [8]: https://www.thoughtworks.com/insights/articles/fitness-function-driven-development
 [9]: https://www.thoughtworks.com/radar/techniques?blipid=201911044
 [10]: https://www.youtube.com/watch?v=5kwMgHuOaes
+[11]: https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/
+[12]: https://www.youtube.com/watch?v=po712VIZZ7M
+[13]: https://landscape.cncf.io/
