@@ -125,7 +125,8 @@ After quite a bit of interviews I have seen common questions and follow-ups:
 but paraphrasing here, I think of SRE as an implementation of DevOps practices done 
 by Google.
 
-1. Can you describe/document a pipeline to deliver code from scratch? 
+1. Can you describe/document a pipeline to deliver code from scratch? This is a
+   lengthy question that may deserve its own post! it gets asked often.
 
 [1]: https://twitter.com/patkua
 [2]: https://www.youtube.com/watch?v=v_nhv6aY1Kg
