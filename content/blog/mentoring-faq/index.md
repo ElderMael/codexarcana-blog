@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions During Mentorship Sessions"
-description: "WIP"
+description: "A FAQ from notes during my mentorship sessions on the Devz Community"
 date: "2020-11-27T14:46:58-06:00"
 categories: 
   - Architecture
