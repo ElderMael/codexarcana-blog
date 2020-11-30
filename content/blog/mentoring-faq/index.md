@@ -10,7 +10,8 @@ categories:
   - Technical Leadership
   - Technical Roles
 
-published: false
+draft: true
+
 canonical_link: https://blog.eldermael.io/mentoring-faq
 redirect_from:
   - /mentoring-faq
