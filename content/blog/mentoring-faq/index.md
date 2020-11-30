@@ -10,7 +10,7 @@ categories:
   - Technical Leadership
   - Technical Roles
 
-draft: true
+draft: false
 
 canonical_link: https://blog.eldermael.io/mentoring-faq
 redirect_from:
@@ -112,12 +112,14 @@ After quite a bit of interviews I have seen common questions and follow-ups:
 1. What is DevOps? The interviewer wants to know if you "get DevOps". Focus
    on why DevOps is more of a practice and cultural mindset instead of titles. 
    
-1. What is SRE? Software Reliability Engineering can be seen, [per Google's words][5]:
+1. What is SRE? Software Reliability Engineering is kind of defined as:
 
-   > One could view DevOps as a generalization of several core SRE principles to 
-   > a wider range of organizations, management structures, and personnel. One 
-   > could equivalently view SRE as a specific implementation of DevOps with some 
-   > idiosyncratic extensions.
+    > One could view DevOps as a generalization of several core SRE principles to 
+    > a wider range of organizations, management structures, and personnel. One 
+    > could equivalently view SRE as a specific implementation of DevOps with some 
+    > idiosyncratic extensions.
+
+   Per [Google's own book on the matter][5].
 
 1. What's the difference between DevOps and SREs? Per the previous question, 
 but paraphrasing here, I think of SRE as an implementation of DevOps practices done 
@@ -129,4 +131,5 @@ by Google.
 [2]: https://www.youtube.com/watch?v=v_nhv6aY1Kg
 [3]: https://evolutionaryarchitecture.com/
 [4]: https://en.wikipedia.org/wiki/Conway%27s_law
+[5]: https://sre.google/sre-book/introduction/
 [6]: https://www.youtube.com/watch?v=iLS6NXMXtLI&t=1153s
