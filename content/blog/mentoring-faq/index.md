@@ -23,7 +23,7 @@ thankful for everyone that chose me among all the mentors, and I took notes
 on most of the questions.
 
 I immediately found frequently asked questions for all the topics that I listed,
-so I decided to write a blog with them. In the future I plan to update this
+so I decided to write a blog post with them. In the future I plan to update this
 post with more questions as they come.
 
 ## Technical Leadership
