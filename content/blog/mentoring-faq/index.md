@@ -39,7 +39,7 @@ on the topic. [Here][6] is the most influential talk I could find for this.
 
 ### What Skills Do I Need to Be A Tech Lead?
 
-I think there are fundamentally 3 skills that you need to develop:
+I think there are fundamentally 4 skills that you need to develop:
 
 1. Leadership skills, being technical or non-technical,
 1. System Design and Architecture skills and,
