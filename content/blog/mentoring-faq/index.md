@@ -87,7 +87,7 @@ work well with the _evolution analogy_:
    you can start new business lines from scratch quickly with the right
    tools.
 
-1. Innovation becomes cheap. As a side effect of the previous point,
+1. Making innovation cheaper. As a side effect of the previous point,
    microservices enable to quickly prototype new ideas because you can 
    start new business lines from scratch quickly with the right tools.
 
