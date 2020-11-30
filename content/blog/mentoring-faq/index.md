@@ -40,7 +40,7 @@ I think there are fundamentally 3 skills that you need to develop:
 
 1. Leadership skills, being technical or not technical
 1. System Design and Architecture skills, 
-1. Developer skills, which you may already have
+1. Developer skills, which you may already have.
 
 ## Architecture
 
@@ -59,6 +59,10 @@ time on proofs of concepts and foundational technology. I have worked
 with architects that usually pair program with developers to unravel
 solutions that can fit the actual working code instead of coming up
 with solutions that may or may not fit the current architecture.
+
+I think this approach has the best results overall because it proofs
+that your architecture guidelines and implementations fit into the
+software other teams are developing.
 
 ## Microservices
 
@@ -95,6 +99,27 @@ the proper mindset can be problematic.
 If you use Conway's law to your favor, service-based architectures can
 help move faster, but without organizational perspective it usually works
 against the adoption.
+
+## DevOps
+
+### What Are The Most Common Questions You Are Asked During Interviews?
+
+After quite a bit of interviews I have seen common questions and follow-ups:
+
+1. What is DevOps? The interviewer wants to know if you "get DevOps". Focus
+   on why DevOps is more of a practice and cultural mindset instead of titles. 
+   
+1. What is SRE? Software Reliability Engineering can be seen, [per Google's words][5],
+   
+   > One could view DevOps as a generalization of several core SRE principles to 
+   > a wider range of organizations, management structures, and personnel. One 
+   > could equivalently view SRE as a specific implementation of DevOps with some 
+   > idiosyncratic extensions.
+
+   This answer usually satisfies the interviewer, but paraphrasing here, I think
+   of SRE as an implementation of DevOps practices done by Google.
+
+1. What's the difference between DevOps and SREs? 
 
 [2]: https://www.youtube.com/watch?v=v_nhv6aY1Kg
 [3]: https://evolutionaryarchitecture.com/
