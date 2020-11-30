@@ -171,7 +171,8 @@ you should focus on:
 - Learn how to work with a specific Cloud Provider. This implies learning
   how to manage and architect infrastructure on a specific provider. AWS has
   around [30% of the market share][11] as of the time of this post, so it maximizes
-  your opportunity to land a job.
+  your opportunity to land a job. This implies [Infrastructure as Code][14] practices
+  and tools to help you provision and manage such infrastructure.
 
 - Learn tools and practices regarding Continuous Integration and Continuous Delivery.
   Most interviews in the infrastructure space ask you to design a pipeline to
@@ -181,8 +182,15 @@ you should focus on:
 
 - Learn about Observability tools and practices. A good rule of thumb is to use tools
   from the [Cloud Native Computing Foundation Observability And Analysis landscape.][13]
-  Most interviews ask you to configure not only instrumentation but also alerts and
-  dashboards for services and infrastructure. 
+  Most interviews, in my experience, will ask you to configure not only instrumentation
+  but also alerts and dashboards for services and infrastructure.
+  
+If you are targeting sysadmin positions, they probably will overlap with the previous
+points but also require the following:
+
+- Networking fundamentals and Software Defined Networking.
+- Operating System maintenance and provisioning (package management, configuration).
+- Container/VM Orchestration Tools (Kubernetes is the most popular nowadays).
 
 [1]: https://twitter.com/patkua
 [2]: https://www.youtube.com/watch?v=v_nhv6aY1Kg
@@ -197,3 +205,4 @@ you should focus on:
 [11]: https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/
 [12]: https://www.youtube.com/watch?v=po712VIZZ7M
 [13]: https://landscape.cncf.io/
+[14]: https://infrastructure-as-code.com/book/
