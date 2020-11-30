@@ -46,6 +46,21 @@ I think there are fundamentally 3 skills that you need to develop:
 1. Developer skills, which you may already have.
 1. Time management skills to balance your time spent on these.
 
+### I Want To Keep Coding But Grow My Career. Is There A Way To Do That?
+
+I think this entirely depends on your organization. If the only path for
+growth to happen is go into management, probably it will conflict with
+this particular interest of yours.
+
+I have experienced this myself and usually Tech Leader positions conflict
+with time spent programming. If your particular organization has technical
+paths you can take positions such as Principal Engineer you can try to move
+into that direction, but most companies do not have such paths.
+
+You can always trailblaze the path by communicating clearly with your managers
+the pursuit of such goal. Some companies can accommodate such goals but others
+have different priorities thus they will conflict with yours.
+
 ## Architecture
 
 ### As An Architect, Should I Still Develop Software?
