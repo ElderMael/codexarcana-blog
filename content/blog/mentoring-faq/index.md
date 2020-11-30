@@ -116,10 +116,9 @@ After quite a bit of interviews I have seen common questions and follow-ups:
    > could equivalently view SRE as a specific implementation of DevOps with some 
    > idiosyncratic extensions.
 
-   This answer usually satisfies the interviewer, but paraphrasing here, I think
-   of SRE as an implementation of DevOps practices done by Google.
-
-1. What's the difference between DevOps and SREs? 
+1. What's the difference between DevOps and SREs? Per the previous question, 
+but paraphrasing here, I think of SRE as an implementation of DevOps practices done 
+by Google.
 
 [2]: https://www.youtube.com/watch?v=v_nhv6aY1Kg
 [3]: https://evolutionaryarchitecture.com/
