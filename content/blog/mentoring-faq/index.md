@@ -44,6 +44,7 @@ I think there are fundamentally 3 skills that you need to develop:
 1. Leadership skills, being technical or non-technical,
 1. System Design and Architecture skills and,
 1. Developer skills, which you may already have.
+1. Time management skills to balance your time spent on these.
 
 ## Architecture
 
