@@ -19,7 +19,7 @@ redirect_from:
 
 During the past weeks I have spent about 2 hours per week on mentorship
 sessions with various developers from the [Devz Community][15]. I am really
-thankful for everyone that chose me among all the mentors and I took notes
+thankful for everyone that chose me among all the mentors, and I took notes
 on most of the questions.
 
 I immediately found frequently asked questions for all the topics that I listed,
