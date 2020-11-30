@@ -54,11 +54,11 @@ this particular interest of yours.
 
 I have experienced this myself and usually Tech Leader positions conflict
 with time spent programming. If your particular organization has technical
-paths you can take positions such as Principal Engineer you can try to move
-into that direction, but most companies do not have such paths.
+paths (such as Principal Engineer) you can try to move into that direction,
+but most companies do not have such paths.
 
 You can always trailblaze the path by communicating clearly with your managers
-the pursuit of such goal. Some companies can accommodate such goals but others
+the pursuit of such goal. Some companies can accommodate you but others
 have different priorities thus they will conflict with yours.
 
 ## Architecture
