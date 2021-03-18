@@ -14,6 +14,15 @@ redirect_from:
   - /interviewing-devops-guide
 ---
 
+I had the fortune of having fantastic mentors at the beginning of my career and one thing always sticked to me very
+early during my formative years. One of the engineers I consider a mentor on all aspects of software development 
+mentioned that he interviews more or less every year on companies regardless of the situation i.e. if he is looking
+for a job or not. He mentioned that he interviews to know if he is being underpaid, to know which technologies he should
+be studying and are hot on the market, and of course, to maybe get something better and switch jobs.
+
+Is because of this that I seasonally take interviews at different companies and startups. I think I have been doing this
+for at least 8 years since I got out of my first tech lead position.
+
 ## Programming Section
 
 Around 70% of the interviews I took had a programming section. These 
