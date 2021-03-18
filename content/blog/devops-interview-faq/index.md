@@ -7,7 +7,7 @@ categories:
   - SRE  
   - Interviewing
 
-draft: false
+draft: true
 
 canonical_link: https://blog.eldermael.io/interviewing-devops-guide
 redirect_from:
@@ -23,9 +23,17 @@ be studying and are hot on the market, and of course, to maybe get something bet
 Is because of this that I seasonally take interviews at different companies and startups. I think I have been doing this
 for at least 8 years since I got out of my first tech lead position.
 
+Now, interviewing is hard and very broken in our industry, many companies have tried to solve it, but they are mostly
+doing the same thing with different flavors. You can see the patterns of course and books like "Cracking the Code 
+Interview" exist for a reason.
+
+I have been working on SRE/DevOps roles for at least 5 years now and here are very common sections and some sort of
+explanation of such and frequently asked questions as well as follow-up questions.
+
 ## Programming Section
 
-Around 70% of the interviews I took had a programming section. These 
+Around 70% of the interviews I took had a programming section. This is not surprising because most SRE/DevOps roles do
+require programming knowledge.
 
 ### Take Home Assignment
 
@@ -33,7 +41,7 @@ Around 70% of the interviews I took had a programming section. These
 
 ### Website Programming Challenges
 
-### Usual Follow Ups
+### Usual Follow-Ups
 
 - Explain the code to interviewers
 - Add a small but not trivial improvement to the project
@@ -43,17 +51,17 @@ Around 70% of the interviews I took had a programming section. These
 
 Around 50% of the interviews had a system design section.
 
-### Usual Follow Ups
+### Usual Follow-Ups
 
 ### Scale Given System
 
-### Usual Follow Ups
+### Usual Follow-Ups
 
 ## Past Projects and Experience Section
 
 Around 60% of the interviews had a section to talk about past projects and experience on them.
 
-### Usual Follow Ups
+### Usual Follow-Ups
 
 ## Pipeline Design Section
 
@@ -72,7 +80,7 @@ such as security scans, architecture fitness functions, performance testing, etc
 they should not fail the build in case issues are found (the discussion about why is another interesting topic but
 outside scope)
 
-### Usual Follow Ups
+### Usual Follow-Ups
 
 - How would you handle rollbacks?
 - What happens if I need to deploy a hotfix fast?
@@ -84,7 +92,7 @@ Around 25% of the interviews had a section in which you will be described a situ
 fix production systems.
 
 
-### Usual Follow Ups
+### Usual Follow-Ups
 
 ## What is what I ask often?
 
