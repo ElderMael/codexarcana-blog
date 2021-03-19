@@ -7,7 +7,7 @@ categories:
   - SRE  
   - Interviewing
 
-draft: true
+draft: false
 
 canonical_link: https://blog.eldermael.io/interviewing-devops-guide
 redirect_from:
