@@ -27,8 +27,8 @@ Now, interviewing is hard and very broken in our industry, many companies have t
 doing the same thing with different flavors. You can see the patterns of course and books like "Cracking the Code 
 Interview" exist for a reason.
 
-I have been working on SRE/DevOps roles for at least 5 years now and here are very common sections and some sort of
-explanation of such and frequently asked questions as well as follow-up questions.
+I have been working on SRE/DevOps roles for at least 5 years now and here are common sections and some sort of
+explanation of such and frequently asked questions as well as follow-ups.
 
 ## Programming Section
 
@@ -37,15 +37,25 @@ require programming knowledge.
 
 ### Take Home Assignment
 
+The two most common take home assignments these days are to build a CLI or an API. Huge home assignments also require
+logging in to a sandbox and deploy your API by building a pipeline and somehow make it available to the internet to
+query. Usually they are intermingled with pipeline design for CI/CD questions.
+
 ### Live Coding
+
+This is no surprise, live coding a small program to solve a predefined problem is the go to of most programming 
+sections. One of the most common problems are:
+
+- Read a log file and sort it, count the number of lines that match a pattern, explain the performance implications
+  of your algorithm
 
 ### Website Programming Challenges
 
 ### Usual Follow-Ups
 
-- Explain the code to interviewers
-- Add a small but not trivial improvement to the project
-- Deploy the code itself to a sandbox environment
+- Explain the code to interviewers, specially from take home assignments
+- Add a small but not trivial improvement to the project you delivered
+- Deploy the code itself to a sandbox environment, modify it to have some sort of observability
 
 ## System Design Section
 
@@ -53,15 +63,23 @@ Around 50% of the interviews had a system design section.
 
 ### Usual Follow-Ups
 
-### Scale Given System
+## Scale Given System
 
 ### Usual Follow-Ups
 
 ## Past Projects and Experience Section
 
-Around 60% of the interviews had a section to talk about past projects and experience on them.
+Around 60% of the interviews had a section to talk about past projects and experience on them. This section is the one
+I enjoy the most because this is just a talk, and it tends to go very well because I really like to talk about what I
+have done and seen!
+
+I try to align my conversation to whatever technologies the company I am interviewing for is using. I also try to talk
+about different strategies used in different companies and give context of why each one is a better fit for each one.
+
 
 ### Usual Follow-Ups
+
+- What would you change if you had the power in your past projects?
 
 ## Pipeline Design Section
 
@@ -91,8 +109,23 @@ outside scope)
 Around 25% of the interviews had a section in which you will be described a situation where you are to troubleshoot and
 fix production systems.
 
+While this is more of a freeform stage, most companies really only go so far. A typical scenario starts with how you
+would set an alarm for a specific time series (HTTP requests failing for example). Then they ask you how would you
+find the issue and provide you with a response for each question.
+
+In more than one occasion I have said that I would try to fix the issue myself in the code (or rebooting, or whatever)
+if possible to avoid bothering engineers on-call. This tends to be a double-edged sword as some companies have a culture
+of just handing off the problem to the next person on call and suggesting fixing the problems in-place is a form of
+anarchy. I tend to avoid those companies, the least bureaucracy the better.
+
+Another point of conflict is the use of small commits and trunk based development in conjunction with roll-forwards
+instead of rollbacks.
+
 
 ### Usual Follow-Ups
+
+- Explain an issue you have had on your project and how did you troubleshoot it.
+- How would you design a rollback strategy for errors in production?
 
 ## What is what I ask often?
 
