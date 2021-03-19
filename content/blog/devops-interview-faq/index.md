@@ -20,7 +20,7 @@ mentioned that he interviews more or less every year on companies regardless of 
 for a job or not. He mentioned that he interviews to know if he is being underpaid, to know which technologies he should
 be studying and are hot on the market, and of course, to maybe get something better and switch jobs.
 
-Is because of this that I seasonally take interviews at different companies and startups. I think I have been doing this
+Because of this, I seasonally take interviews at different companies and startups. I think I have been doing this
 for at least 8 years since I got out of my first tech lead position.
 
 Now, interviewing is hard and very broken in our industry, many companies have tried to solve it, but they are mostly
@@ -51,6 +51,10 @@ sections. One of the most common problems are:
 
 ### Website Programming Challenges
 
+This is usually the first filter I have seen in places where they do not want to do a take home assignment, or a live
+pair programming challenge. Sometimes this is OK because it removes a lot of hours from the interview process. 
+HackerRank is the most common website for this.
+
 ### Usual Follow-Ups
 
 - Explain the code to interviewers, specially from take home assignments
@@ -59,9 +63,24 @@ sections. One of the most common problems are:
 
 ## System Design Section
 
-Around 50% of the interviews had a system design section.
+Around 50% of the interviews had a system design section. This is also a section I enjoy and I kinda have a script for
+such interviews.
+
+1. I tend to ask the business need for such system. Not advocating for a change, just explaining that most of the time
+   we have to deal with value-based delivery and seeing the business justification for a system tends to help to focus
+   on the right questions.
+   
+1. I ask for hardware constraints or any kind of cloud restrictions. Also, expected number of users/operations as well
+   as future usage. This gives me a way to figure out if I need to design for vertical or horizontal scale.
+   
+1. I tend to stick to 4+1 architectural view model to describe the system I am designing and zooming in or out depending
+   on the questions asked. It's always a good idea to start from the higher views to the lower views and ask clarifying
+   questions before proceeding to the next level. This tends to have good results (I even mention the model explicitly).
 
 ### Usual Follow-Ups
+
+- What would you change in your current work regarding architecture?
+- Have you worked on companies where they have good implementations of this problem? If true, explain it so.
 
 ## Scale Given System
 
