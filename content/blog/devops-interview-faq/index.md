@@ -84,7 +84,22 @@ such interviews.
 
 ## Scale Given System
 
-### Usual Follow-Ups
+Around 25% of the interviews had a section to discuss how to scale out a given system. This section is kinda 
+descriptive and with some kind of overlap with the System Design section but is also different enough to differentiate 
+it from the others.
+
+The most common scenarios are:
+
+- Given N servers with the same hardware, how would you deploy applications to best scale the system. This question
+  usually involves an orchestrator but sometimes the twist is given is to not use it.
+  
+- How would you scale a service where the database server is the current bottleneck? Sharding and horizontal slicing
+  are handy concepts here.
+  
+- You are tasked to design a system to scale the deployment of new versions of an artifact in different regions. I have
+  seen variants of these that require the use of P2P networks or clients within the servers themselves along a pipeline
+  to execute them. 
+  
 
 ## Past Projects and Experience Section
 
@@ -111,6 +126,7 @@ using 3 mayor sections:
 - Build i.e. generate artifacts and configuration bundles
 - Deploy i.e. place an artifact in order to await for traffic
 - Release i.e. make the artifact operational e.g. start receiving traffic
+- Compliance i.e. pipelines that run cross-cutting concerns, etc.
 
 Optionally, I pinpoint that there are pipelines that are going to process artifacts/code through compliance stages
 such as security scans, architecture fitness functions, performance testing, etc. These tasks are not common and
