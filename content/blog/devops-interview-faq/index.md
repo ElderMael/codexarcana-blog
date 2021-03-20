@@ -14,8 +14,8 @@ redirect_from:
   - /interviewing-devops-guide
 ---
 
-I had the fortune of having fantastic mentors at the beginning of my career and one thing always sticked to me very
-early during my formative years. One of the engineers I consider a mentor on all aspects of software development 
+I had the fortune of having fantastic mentors at the beginning of my career and one thing always stuck to me very
+early during my formative years: one of the engineers I consider a mentor on all aspects of software development 
 mentioned that he interviews more or less every year on companies regardless of the situation i.e. if he is looking
 for a job or not. He mentioned that he interviews to know if he is being underpaid, to know which technologies he should
 be studying and are hot on the market, and of course, to maybe get something better and switch jobs.
@@ -155,7 +155,6 @@ anarchy. I tend to avoid those companies, the least bureaucracy the better.
 
 Another point of conflict is the use of small commits and trunk based development in conjunction with roll-forwards
 instead of rollbacks.
-
 
 ### Usual Follow-Ups
 
